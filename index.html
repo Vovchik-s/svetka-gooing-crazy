@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svetka going crazy</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/661381bab5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div style="z-index: 5" class="audio-container">
+        <audio id="audio" autoplay="autoplay" loop="loop">
+            <source
+                src="https://cdn.britannica.com/70/92570-005-29A56B04/Dies-Irae-recording-Mozarts-Requiem-in-D-1953.mp3" />
+        </audio>
+        <div class="audio-controls">
+            <button id="play">Play</button>
+            <button style="display: none" id="pause">Pause</button>
+            <button id="addVolume">Vol +</button>
+            <button id="removeVolume">Vol -</button>
+            <button id="mute"><i class="fa-solid fa-volume-up"></i></button>
+
+        </div>
+    </div>
+
+    
+    
+
+    <!-- <a id="mute" style="z-index: 5" href="#"><i class="fa-solid fa-volume-off" id="mute-icon" ></i></a> -->
+
+
+    <div class="video-overlay"></div>
+    <video autoplay loop muted play-inline>
+        <source src="./img/pexels-c-technical-6718244 from Pexels.mp4" type="video/mp4">
+    </video>
+
+
+    <div id="month" class="month"></div>
+
+    <h1>Time before squad change</h1>
+
+    <div id="countdown" class="countdown">
+        <div class="time">
+            <h2 id="days">00</h2>
+            <small>days</small>
+        </div>
+        <div class="time">
+            <h2 id="hours">00</h2>
+            <small>hours</small>
+        </div>
+        <div class="time">
+            <h2 id="minutes">00</h2>
+            <small>minutes</small>
+        </div>
+        <div class="time">
+            <h2 id="seconds">00</h2>
+            <small>seconds</small>
+        </div>
+    </div>
+
+
+    <!-- <img src="./img/spinner.gif" alt="spinner" id="loading" class="loading"> -->
+
+    <img class="loading" id="loading" src="./img/spinner.gif" alt="loading">
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
